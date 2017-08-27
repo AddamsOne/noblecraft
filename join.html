@@ -11,34 +11,46 @@
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/ico" href="favicon.ico"/>
+    <link rel="shortcut icon" type="image/ico" href="favicon.ico" />
 </head>
 
 <body>
     <div class="uk-position-top">
-        <nav class="uk-container uk-container-expand uk-background-muted" uk-navbar>
-
+        <nav class="uk-container uk-container-expand uk-background-muted" style="z-index: 980;" uk-sticky="top: #content;animation: uk-animation-slide-top;"
+            uk-navbar>
             <div class="uk-navbar-left">
-
                 <ul class="uk-navbar-nav">
                     <a class="uk-navbar-item uk-logo" href="index.html">
-                        <!--<div class="uk-padding-small"><img src="dist/images/logo.jpg" width="45px"></div>-->
-                        Noble 团队粉丝服务器
+                        <div class="uk-padding-small"><img src="dist/images/logo.png" width="45px" height="50px"></div>
+                        <div class="uk-visible@m">Noble 团队粉丝服务器</div>
                     </a>
                 </ul>
-
             </div>
 
             <div class="uk-navbar-right">
 
-                <ul class="uk-navbar-nav">
-                    <li class="uk-active"><a href="index.html">首页</a></li>
-                    <li><a href="#">加入申请</a></li>
-                    <li><a href="#">Wiki</a></li>
+                <ul class="uk-navbar-nav uk-visible@m">
+                    <li><a href="index.html">首页</a></li>
+                    <li class="uk-active"><a href="join.html">加入申请</a></li>
+                    <li><a href="http://wiki.oflbc.com/">Wiki</a></li>
                     <li><a href="about.html">联系我们</a></li>
                 </ul>
+                <ul class="uk-navbar uk-hidden@m">
+                    <a href="#offcanvas-slide" uk-icon="icon: menu; ratio: 1.5" uk-toggle></a>
+                    <nav id="offcanvas-slide" uk-offcanvas>
+                        <div class="uk-offcanvas-bar">
+                            <ul class="uk-nav uk-nav-default">
+                                <div class="uk-h4">Noble 团队粉丝服务器</div>
+                                <div class="uk-list uk-list-divider">
+                                    <li><a href="index.html">首页</a></li>
+                                    <li class="uk-active"><a href="join.html">加入申请</a></li>
+                                    <li><a href="http://wiki.oflbc.com/">Wiki</a></li>
+                                    <li><a href="about.html">联系我们</a></li>
+                                </div>
+                            </ul>
+                        </div>
+                    </nav>
             </div>
-        </nav>
     </div>
 
     <main class="uk-container uk-container-expand uk-text-center uk-padding-large">
